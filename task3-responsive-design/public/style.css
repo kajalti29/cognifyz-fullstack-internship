@@ -1,0 +1,110 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+}
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#007bff;
+color:white;
+padding:15px 30px;
+}
+
+.navbar ul{
+list-style:none;
+display:flex;
+}
+
+.navbar li{
+margin-left:20px;
+cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+height:300px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#007bff,#00c6ff);
+color:white;
+text-align:center;
+}
+
+.hero button{
+margin-top:20px;
+padding:10px 20px;
+border:none;
+background:white;
+color:#007bff;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* Cards */
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin:40px;
+}
+
+.card{
+background:white;
+width:280px;
+margin:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+}
+
+.card h2{
+margin:15px 0;
+}
+
+.card p{
+padding:0 10px 20px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* Footer */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
+}
+.container{
+flex-direction:column;
+align-items:center;
+}
+}
